@@ -70,11 +70,156 @@ body{
 /* Social icons */
 .social-icons li a i{
     padding: 10px;
-    /* font-size: 1rem; */
     border-radius: 50%;
 } 
 
 .social-icons li a i:hover{
     box-shadow: 0px 0px 6px 4px lightgrey;
     border-bottom: none;
+}
+
+/* General Section Styling*/
+
+section{
+    width: 100%;
+    /* height: 75vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    
+}
+.section-heading span{
+    font-size: 40px;
+    font-family: Arial;
+    display: inline-block;
+    padding-top: 10px;
+    color: #2857a4;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+
+
+/********************* About Section *****************************/
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+/* Styling display Picture */
+
+#display-picture{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -13vh;
+    
+}
+
+#display-picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px grey;
+    
+    
+}
+
+/* About text */
+
+#about-text-container{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    /* margin-left: 18%; */
+}
+
+#about-text{
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.text-highlight{
+    font-weight: bolder;
+    color: rgb(42, 122, 243);
+}
+
+/* Skills section */
+
+.skills-display{
+    padding: 20px 0px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.skill-progress{
+    
+    width: 13rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.skill-progress>div{
+    border-radius: 50px 0px 0px 50px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.eighty-five-percent{
+    height: inherit;
+    width: 80%;
+}
+
+.skill-name{
+    padding: 5px 0px;
+}
+
+.skill-name span{
+    color: white;
+    margin-left: 10px;
+}
+
+.sixty-five-percent{
+    height: inherit;
+    width: 60%;
+}
+
+.seven-five-percent{
+    height: inherit;
+    width: 70%;
+}
+
+.nine-five-percent{
+    height: inherit;
+    width: 88%;
+}
+.mb-pink{
+    background-color: pink;
+}
+.mb-orange{
+    background-color: tomato;
+}
+.mb-violet{
+    background-color: violet
 }

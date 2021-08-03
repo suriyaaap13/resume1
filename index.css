@@ -160,6 +160,7 @@ section:nth-child(2n+1){
 /* Skills section */
 
 .skills-display{
+    margin-top: 28px;
     padding: 20px 0px;
     width: 70%;
     display: flex;
@@ -175,20 +176,12 @@ section:nth-child(2n+1){
     height: 2rem;
     background-color: white;
     border-radius: 50px;
-    margin: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 2px grey;
 }
 
 .skill-progress>div{
     border-radius: 50px 0px 0px 50px;
-}
-
-.mb-blue{
-    background-color: #2857a4;
-}
-
-.eighty-five-percent{
-    height: inherit;
-    width: 80%;
 }
 
 .skill-name{
@@ -200,20 +193,13 @@ section:nth-child(2n+1){
     margin-left: 10px;
 }
 
-.sixty-five-percent{
-    height: inherit;
-    width: 60%;
+
+/* colors of skill-bar */
+
+.mb-blue{
+    background-color: #2857a4;
 }
 
-.seven-five-percent{
-    height: inherit;
-    width: 70%;
-}
-
-.nine-five-percent{
-    height: inherit;
-    width: 88%;
-}
 .mb-pink{
     background-color: pink;
 }
@@ -223,3 +209,27 @@ section:nth-child(2n+1){
 .mb-violet{
     background-color: violet
 }
+
+/* percentage-bar */
+
+.sixty-five-percent{
+    height: inherit;
+    width: 65%;
+}
+
+
+.sixty-percent{
+    height: inherit;
+    width: 60%;
+}
+
+.seventy-percent{
+    height: inherit;
+    width: 70%;
+}
+
+.eight-five-percent{
+    height: inherit;
+    width: 85%;
+}
+

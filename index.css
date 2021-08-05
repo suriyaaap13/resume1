@@ -284,15 +284,107 @@ section:nth-child(2n+1){
 
 .timeline{
     position: relative;
-    width: 75%;
-    border: 2px solid black;
+    width: 70%;
+    /* border: 2px solid black; */
 }
+
 .timeline-box{
     position: relative;
+    padding: 10px;
     width: 40%;
+    margin: 5px;
     left: 5%;
     min-height: 150px;
+    /* border: 2px solid black; */
 }
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 37%;
+    right: -7.9%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 37%;
+    left: -8.8%;
+    z-index: 1;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0px;
+    border: 3px dashed rgb(116, 177, 218);
+    top: 10%;
+    left: 50%;
+}
+.time-traveller{
+    font-size: 2rem;
+    transform: rotate(90deg);
+    position: sticky;
+    top: 25%;
+    color: rgb(6, 67, 138);
+    z-index: 2;
+}
+
+/* styling the timeline boxes */
+.box-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.institution-logo{
+    height: 5rem;
+    width: 5rem;
+
+}
+.institution-logo img{
+    height: 100%;
+    width: 100%;
+}
+.info span{
+    display: block;
+    position: relative;
+}
+.degree-name{
+    font-size: 1.6rem;
+    /* right: 0%; */
+    font-family: Arial;
+    color: #2857a4;
+}
+.institute-name{
+    font-size: 1.4rem;
+    font-family: Arial;
+    color: orange;
+}
+.time-period{
+    font-size: 1.2rem;
+    font-family: Arial;
+    color: grey;
+}
+.description{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+
+
 /* contact Section */
 /* Setting up the gradient */
 #contact{

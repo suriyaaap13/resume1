@@ -243,7 +243,7 @@ section:nth-child(2n+1){
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px 0px;
-    width: 70%;
+    width: 90%;
 }
 .portfolio-image-container{
     position: relative;
@@ -279,4 +279,117 @@ section:nth-child(2n+1){
 .portfolio-image-container:hover .portfolio-details{
     background-color: #80808078;
     color: white;
+}
+/* work-experience section */
+
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+}
+/* contact Section */
+/* Setting up the gradient */
+#contact{
+ background: linear-gradient(50deg,#2857a4 0%,#403066 74%);
+}
+
+.white-color{
+    color: white;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.form-container{
+    margin-right: 60px;
+}
+
+.contact-container .form-container form input{
+    display: block;
+}
+
+/* Styling the form in contact section */
+form input{
+    background: transparent;
+    height: 3rem;
+    width: 30rem;
+    color: white;
+    font-size: 1rem;
+    font-family: Arial;
+    border-style: hidden;
+    border-bottom: 2px solid white;
+    margin-bottom: 9px;
+    padding: 10px;
+    outline: none;
+}
+
+form input::placeholder{
+    color: white;
+}
+#text-message{
+    background: transparent;
+    border-style: hidden;
+    font-size: 1rem;
+    width: 30rem;
+    margin-top: 9px;
+    border-bottom: 2px solid white;
+    font-size: 1rem;
+    font-family: Arial;
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+#text-message::placeholder{
+    color: white;
+    
+}
+form button{
+    margin: 20px;
+    margin-left: 130px;
+    box-shadow: 0px 0px 1px 2px white;
+}
+/* styling the submit button */
+#submit-btn{
+    background: transparent;
+    color: white;  
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+
+}
+
+
+/* styling the message side */
+.message-container{
+    margin-left: 10px;
+}
+.message-container{
+    color: white;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+ul li div{
+    display: inline-block;
+}
+ul li{
+    margin: 10px;
+}
+.icon{
+    font-size: 1.5rem;
+}
+ul li i{
+    padding: 10px;
+    width: 20px;
 }

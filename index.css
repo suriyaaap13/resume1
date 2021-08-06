@@ -16,18 +16,41 @@ body{
 
 }
 
+
 /* Nav-menu container */
+
+.toggle-btn{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 
 .horizontal-list{
     
     list-style: none;
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .horizontal-list li{
     margin-top: 15px;
-    display: inline-block;
-    
 }
 
 .horizontal-list li a{
@@ -285,7 +308,6 @@ section:nth-child(2n+1){
 .timeline{
     position: relative;
     width: 70%;
-    /* border: 2px solid black; */
 }
 
 .timeline-box{
@@ -295,7 +317,6 @@ section:nth-child(2n+1){
     margin: 5px;
     left: 5%;
     min-height: 150px;
-    /* border: 2px solid black; */
 }
 
 .timeline-box:nth-child(2n){
@@ -341,6 +362,8 @@ section:nth-child(2n+1){
     color: rgb(6, 67, 138);
     z-index: 2;
 }
+
+
 
 /* styling the timeline boxes */
 .box-header{
@@ -403,7 +426,7 @@ section:nth-child(2n+1){
 }
 
 .form-container{
-    margin-right: 60px;
+    padding: 50px;
 }
 
 .contact-container .form-container form input{
@@ -467,6 +490,7 @@ form button{
 }
 .message-container{
     color: white;
+    padding: 50px;
     font-family: sans-serif;
 }
 ul{
@@ -485,3 +509,90 @@ ul li i{
     padding: 10px;
     width: 20px;
 }
+/* applying media query to skills section */
+@media screen and (max-width: 900px) {
+    .skill-progress{
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill-progress{
+        margin-left: 5rem;
+    }
+}
+
+
+
+
+/* applying media query to contact */
+
+@media screen and (max-width: 1000px) {
+    
+    .timeline-divider{
+        left: 5%;
+    }
+
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+
+    }
+    .timeline-box::after{
+        left: -10.5% !important;
+    }
+    .info span{
+        font-size: 0.8rem !important;
+    }
+    .institution-logo{
+        margin-right: 10px;
+    }
+    .contact-container{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .contact-container{
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+
+    
+
+    .contact-container{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .contact-container{
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .form-container{
+        width: 90%;
+    }
+    .form-container input{
+        height: 4rem;
+        width: 20rem;
+        padding: 20px 10px;
+    }
+
+    .form-container #text-message{
+        /* height: 6rem; */
+        width: 20rem;
+        padding: 10px;
+    }
+    #submit-btn{
+        margin-left: 5rem;
+    }
+    
+}
+
+
+

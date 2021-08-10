@@ -182,7 +182,7 @@ section:nth-child(2n+1){
 
 /* Skills section */
 
-.skills-display{
+#skills-display{
     margin-top: 28px;
     padding: 20px 0px;
     width: 70%;
@@ -579,13 +579,13 @@ ul li i{
     }
     .form-container input{
         height: 4rem;
-        width: 20rem;
+        width: 25rem;
         padding: 20px 10px;
     }
 
     .form-container #text-message{
         /* height: 6rem; */
-        width: 20rem;
+        width: 25rem;
         padding: 10px;
     }
     #submit-btn{
